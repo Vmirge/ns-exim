@@ -331,7 +331,7 @@ if (view === 'login') {
             <div className="max-w-7xl mx-auto px-12">
               <div className="grid lg:grid-cols-2 gap-16 items-center mb-20 text-left">
                 <div className="relative p-4 border border-[#D4AF37]/30 shadow-2xl">
-                  <div className="overflow-hidden h-[500px]"><img src="/About.jpeg" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" /></div>
+                  <div className="overflow-hidden h-[500px]"><img src="/about.jpeg" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" /></div>
                   <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[#D4AF37]"></div>
                 </div>
                 <div className="space-y-8">
