@@ -25,14 +25,14 @@ export default function Home() {
   // --- DATA: PRODUCTS (Synced with your requested attributes) ---
   const [allProducts, setAllProducts] = useState([
     { 
-      id: 1, title: "Men’s Premium T-Shirt", cat: "Men's Wear", img: "/men.JPEG",
+      id: 1, title: "Men’s Premium T-Shirt", cat: "Men's Wear", img: "/men.jpeg",
       fabric: "100% Cotton", gsm: "180 GSM", fitType: "Regular Fit", neckStyle: "Round Neck",
       sleeveType: "Half Sleeve", pattern: "Plain", sizeRange: "S-XXL", colorOptions: "12 Colors",
       season: "Summer", quality: "Export Quality", customization: "Custom Logo", packaging: "Polybag",
       moq: "500 Pcs", origin: "Made in India"
     },
     { 
-      id: 2, title: "Women’s Essential T-Shirt", cat: "Women's Wear", img: "/women.JPEG",
+      id: 2, title: "Women’s Essential T-Shirt", cat: "Women's Wear", img: "/women.jpeg",
       fabric: "Cotton Lycra", gsm: "160 GSM", fitType: "Slim Fit", neckStyle: "V-Neck",
       sleeveType: "Short Sleeve", pattern: "Plain", sizeRange: "XS-XL", colorOptions: "Multiple",
       season: "Summer", quality: "Premium", customization: "Branding", packaging: "Export Grade",
@@ -48,7 +48,7 @@ export default function Home() {
   id: 4, 
   title: "Junior Cotton Graphic T-Shirt", 
   cat: "Kids' Wear", 
-  img: "/kids.JPEG", // Ensure this image is in your public folder
+  img: "/kids.jpeg", // Ensure this image is in your public folder
   price: "Enquire for Price",
   fabric: "100% Cotton / Cotton Blend",
   gsm: "160 / 180 GSM",
@@ -105,7 +105,7 @@ export default function Home() {
       </div>
       <nav className="py-5 px-12 flex justify-between items-center bg-white sticky top-[41px] z-50 shadow-sm">
         <div className="flex items-center gap-4 cursor-pointer" onClick={() => setView('home')}>
-          <img src="/Logoo.JPEG" alt="Logo" className="h-14" />
+          <img src="/Logoo.jpeg" alt="Logo" className="h-14" />
           <div className="border-l border-gray-200 pl-4 text-left">
             <h1 className="text-xl font-serif font-bold text-[#002366] leading-none uppercase">NS India</h1>
             <p className="text-[9px] tracking-[0.2em] text-[#D4AF37] font-bold uppercase mt-1">Exim Solutions</p>
@@ -133,7 +133,7 @@ if (view === 'admin') {
       <aside className="w-72 bg-[#00153D] text-white flex flex-col justify-between shadow-2xl">
         <div>
           <div className="p-10 text-center border-b border-white/5">
-            <img src="/Logoo.JPEG" className="h-12 mx-auto mb-3 brightness-200" />
+            <img src="/Logoo.jpeg" className="h-12 mx-auto mb-3 brightness-200" />
             <p className="text-[10px] tracking-[0.4em] text-[#D4AF37] font-medium uppercase opacity-80">Management Suite</p>
           </div>
           <nav className="p-6 space-y-2">
@@ -273,7 +273,7 @@ if (view === 'login') {
               {/* Decorative background element */}
               <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl" />
               
-              <img src="/Logoo.JPEG" className="h-16 mx-auto mb-10 relative z-10" />
+              <img src="/Logoo.jpeg" className="h-16 mx-auto mb-10 relative z-10" />
               <h2 className="text-3xl font-serif text-[#002366] mb-12 uppercase tracking-tight relative z-10">Login Page</h2>
               
               <form onSubmit={handleLogin} className="space-y-8 relative z-10">
@@ -331,7 +331,7 @@ if (view === 'login') {
             <div className="max-w-7xl mx-auto px-12">
               <div className="grid lg:grid-cols-2 gap-16 items-center mb-20 text-left">
                 <div className="relative p-4 border border-[#D4AF37]/30 shadow-2xl">
-                  <div className="overflow-hidden h-[500px]"><img src="/About.JPEG" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" /></div>
+                  <div className="overflow-hidden h-[500px]"><img src="/About.jpeg" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" /></div>
                   <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[#D4AF37]"></div>
                 </div>
                 <div className="space-y-8">
@@ -353,8 +353,8 @@ if (view === 'login') {
               <h3 className="text-4xl font-serif text-[#002366] mb-12 uppercase">Shop By Collection</h3>
               <div className="grid md:grid-cols-3 gap-8">
                 {[
-                  { name: "Men's Wear", img: "/men.JPEG", items: "T-Shirts & Shirts" },
-                  { name: "Women's Wear", img: "/women.JPEG", items: "Tops & Ethnic" },
+                  { name: "Men's Wear", img: "/men.jpeg", items: "T-Shirts & Shirts" },
+                  { name: "Women's Wear", img: "/women.jpeg", items: "Tops & Ethnic" },
                   { name: "Paper Bags", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800", items: "Eco-Friendly Packing" }
                 ].map((item) => (
                   <div key={item.name} onClick={() => {setView('collections'); setFilter(item.name); window.scrollTo(0,0);}} className="group relative h-96 overflow-hidden cursor-pointer">
@@ -449,7 +449,7 @@ if (view === 'login') {
 
       <footer className="bg-[#002366] text-white pt-20 pb-10 px-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 border-b border-white/10 pb-16 mb-10 text-left">
-          <div className="md:col-span-2"><img src="/Logoo.JPEG" className="h-12 mb-6 brightness-200" /><p className="text-xs text-gray-400 uppercase tracking-tighter leading-relaxed">Merchant Exporter of premium garments from India to the global stage.</p></div>
+          <div className="md:col-span-2"><img src="/Logoo.jpeg" className="h-12 mb-6 brightness-200" /><p className="text-xs text-gray-400 uppercase tracking-tighter leading-relaxed">Merchant Exporter of premium garments from India to the global stage.</p></div>
           <div><h4 className="text-[11px] font-bold tracking-[0.2em] mb-6 uppercase text-[#D4AF37]">Quick Links</h4>
             <ul className="text-[11px] text-gray-400 space-y-4 uppercase">
               <li><button onClick={() => setView('home')}>Home</button></li>
